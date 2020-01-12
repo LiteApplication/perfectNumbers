@@ -1,2 +1,4 @@
 .vscode/*
-src/compiled/*
+src/Python/__pycache__/*
+src/Python/result.txt
+src/Python/*.pyc
