@@ -32,14 +32,13 @@ int main() {
     printf("MAX = ");
     scanf("%llu",&MAX);
     i = MIN;
-    //#pragma omp parallel for schedule(dynamic) reduction(+ : primes)
+    #pragma omp parallel for schedule(dynamic) reduction(+ : primes)
     printf("Starting...\n");
     for (i = MIN;i<MAX+1;i++) {
         percent = (100*i + MAX/2)/MAX;
         printf("%d%% Processing %llu\r", percent, i);
         if (checkPerfect(i)) {
             printf("Found %llu                     \n",i);
-
         }
     }
     end = clock();
