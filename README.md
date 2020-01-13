@@ -17,6 +17,22 @@ This program does not require any dependancy to work.
 #### Compile
 First, you need a compiler depening or your operating system :
  - GCC for Linux
- - GCC for OSX
+ - [GCC](https://github.com/not-kennethreitz/osx-gcc-installer) for OSX
+ - [MingW](http://mingw-w64.org/doku.php) for Windows
  
-To compile the program, ensure that you are in src/Python (on your computer) and run `python main.py`.  
+To compile the program, ensure that you are in src/C (on your computer) and run `gcc main.c -o main` on Linux/OSX or search how to compile C programs on Windows.
+#### Run
+Once you have compile `main.c`, you can run it with `./main`
+If you don't want to compile, you can choose a precompiled version in [/compiled](./compiled) and run it with cmd, PowerShell, Bash or watever you want. 
+If you don't know which version use, select 32bits version and if you don't know your operating system, use osx if you have an iMac or windows else.
+
+### Downloads
+ - Precomiled for Windows 64bits [here](https://github.com/LiteApplication/perfectNumbers/raw/master/compiled/main-windows64.exe)
+ - Precomiled for Windows 32bits [here](https://github.com/LiteApplication/perfectNumbers/raw/master/compiled/main-windows32.exe)
+ - Precomiled for Linux / Mac OSX 64bits [here](https://github.com/LiteApplication/perfectNumbers/raw/master/compiled/main-linux-osx-64)
+ - Precomiled for Linux / Mac OSX 32bits [here](https://github.com/LiteApplication/perfectNumbers/raw/master/compiled/main-linux-osx-32)
+
+## License
+License file is available at [/license](./LICENSE)
+
+Repository by [LiteApplication](https://github.com/LiteApplication)
