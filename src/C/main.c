@@ -7,8 +7,6 @@ char checkPerfect(unsigned long long int number) {
     for (i=1;i<top;i++) {
         if (number % i == 0) {
             somme += i;
-            /*printf("::: %lld\n", i);*/
-
         }
     }
     if (number == somme) {
